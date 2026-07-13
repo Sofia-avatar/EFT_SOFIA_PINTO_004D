@@ -16,6 +16,10 @@ bodega = {
     'FLO6': [22990, 6],
     }
 
+arreglos.append(arreglos)
+bodega.append(bodega)
+print(f"Felicidades, se ha agregado {arreglos} a {bodega} ")
+
 def mostrar_menu():
     print("""
 ========== MENÚ PRINCIPAL ==========
@@ -98,11 +102,17 @@ def existe_codigo(codigo):
 def unidades_tipo(tipo):
     tipo=input("Ingrese tipo de arreglo a consultar: ").upper()
     for arreglos in tipo:
-        codigo=[bodega][2].upper()==codigo.upper()
+        codigo=[bodega][1].upper()==codigo.upper()
         print(f"El total de unidades disponibles es: {arreglos}")
     else:
         print("Tipo de arreglo no encontrado")
     total= 0
+
+def agregar_arreglo(codigo, nombre, tipo, color_principal, tamaño, incluye_tarjeta, temporada, precio, unidades):
+    codigo=input("Ingrese el codigo a buscar: ").lower()
+    if not validar_nombre:
+     print(f"Arreglo encontrado {arreglos} {bodega}")
+
 
 def main():
     while True:
@@ -124,7 +134,7 @@ def main():
             case _:
                 print("Error, seleccione una de las opciones en el menu")
 
-main()
+
 
 
 #profe, por favor sea amable y piadosa, necesito al menos un 4.9 para pasar :(
